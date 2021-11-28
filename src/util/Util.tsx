@@ -109,10 +109,10 @@ export const requestTaskAssignment = (id: string | number) => {
 // TaskMenu Functions
 export const getSelectableTasks = (campaignId: string | number, page?: number, filter?: {query?: string, stage?: string} | null) => {
     console.log(page)
-    let url = createPaginationURL(`${tasksUrl}public/`, page)
+    let url = createPaginationURL(`${tasksUrl}public/`, page) + '&ordering=created_at'
     if (filter) {
         if (filter.query) {
-            url += `&task_responses=${filter.query}`
+            url += `&search=${filter.query}`
         }
         if (filter.stage) {
             url += `&stage=${filter.stage}`

@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import TaskList from "./TaskList";
 import {Box, Grid, Pagination} from "@mui/material";
 import {getSelectableTasks, paginatedDataHandler} from "../../util/Util";
+import TaskFilter from "./TaskFilter";
 
 
 type RouterParams = { campaignId: string }
@@ -48,7 +49,7 @@ const TaskMenu = (props: any) => {
     return (
         <Grid sx={{width: '70%', minWidth: '400px', margin: '0 auto', display: 'block'}}>
             <Box pb={2}>
-                {/*<TaskFilter campaign={campaignId} onFilter={getFilter}/>*/}
+                <TaskFilter campaign={campaignId} onFilter={getFilter}/>
             </Box>
             <TaskList selectable={true} tasks={selectableTasks} refreshTasks={refreshTasks}/>
             <Box pb={2} display={"flex"} justifyContent={"center"}>

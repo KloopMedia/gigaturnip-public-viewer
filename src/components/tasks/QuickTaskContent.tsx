@@ -27,7 +27,7 @@ const QuickTaskContent = (props: QuickTaskContentParams) => {
             let parsed_schema = stage.json_schema ? JSON.parse(stage.json_schema) : {}
             let parsed_ui = stage.ui_schema ? JSON.parse(stage.ui_schema) : {}
 
-            const prev: any = [] // task.displayed_prev_tasks ? task.displayed_prev_tasks : await getPreviousTasks(id)
+            const prev: any = task.displayed_prev_tasks ? task.displayed_prev_tasks : []
 
             const previousTasks = prev.map((task: any) => ({
                 responses: task.responses,
