@@ -74,7 +74,7 @@ const QuickTaskContent = (props: QuickTaskContentParams) => {
                         liveOmit={true}
                         omitExtraData={true}
                         widgets={widgets}
-                        disabled={complete || !isAssigned}
+                        disabled={true}
                     > </Form>
                 </Grid>
             </Grid>
