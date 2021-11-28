@@ -102,7 +102,7 @@ const TaskFilter = (props: { campaign: string, onFilter: (filter: string, stage:
             <Box sx={{m: 1, minWidth: 120}}>
                 <TextField
                     id="outlined-basic"
-                    label="Search Field"
+                    label="Поиск"
                     variant="outlined"
                     fullWidth
                     onChange={handleSearchValueChange}/>
@@ -129,7 +129,7 @@ const TaskFilter = (props: { campaign: string, onFilter: (filter: string, stage:
                     labelId="select-stage-label"
                     id="select-stage"
                     value={stageId}
-                    label="Stage"
+                    label="Форма"
                     onChange={handleStageChange}
                 >
                     <MenuItem value="">
