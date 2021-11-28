@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gigaturnip-public-viewer/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/gigaturnip-public-viewer/static/js/main.7114b394.chunk.js",
-    "main.js.map": "/gigaturnip-public-viewer/static/js/main.7114b394.chunk.js.map",
+    "main.js": "/gigaturnip-public-viewer/static/js/main.c1f01ea1.chunk.js",
+    "main.js.map": "/gigaturnip-public-viewer/static/js/main.c1f01ea1.chunk.js.map",
     "runtime-main.js": "/gigaturnip-public-viewer/static/js/runtime-main.47aa57b2.js",
     "runtime-main.js.map": "/gigaturnip-public-viewer/static/js/runtime-main.47aa57b2.js.map",
     "static/css/2.bd932d36.chunk.css": "/gigaturnip-public-viewer/static/css/2.bd932d36.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.bd932d36.chunk.css",
     "static/js/2.8808f8ba.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.7114b394.chunk.js"
+    "static/js/main.c1f01ea1.chunk.js"
   ]
 }
