@@ -124,7 +124,7 @@ const TaskFilter = (props: { campaign: string, onFilter: (filter: string, stage:
             {/*    </Select>*/}
             {/*</FormControl>*/}
             <FormControl sx={{m: 1, minWidth: 120}}>
-                <InputLabel id="select-stage-filter">Stage</InputLabel>
+                <InputLabel id="select-stage-filter">Форма</InputLabel>
                 <Select
                     labelId="select-stage-label"
                     id="select-stage"
