@@ -35,18 +35,6 @@ const TaskFilter = (props: { campaign: string, onFilter: (filter: string, stage:
         Axios.get(`${taskstagesUrl}public/`)
             .then(res => res.data)
             .then(res => setStages(res))
-            .then(() => {
-                if (!stageId) {
-                    const savedStage = localStorage.getItem("selectable_filter_stage");
-                    const savedFormStage = localStorage.getItem("selectable_filter_form_stage");
-                    if (savedStage) {
-                        setStageId(savedStage)
-                    }
-                    if (savedFormStage) {
-                        setFormStageId(savedFormStage)
-                    }
-                }
-            })
     }, [chainId])
 
     // useEffect(() => {
@@ -83,7 +71,6 @@ const TaskFilter = (props: { campaign: string, onFilter: (filter: string, stage:
 
     const handleStageChange = (event: SelectChangeEvent) => {
         setStageId(event.target.value)
-        localStorage.setItem("selectable_filter_stage", event.target.value);
     }
 
     // const handleFormStageChange = (event: SelectChangeEvent) => {
@@ -107,7 +94,6 @@ const TaskFilter = (props: { campaign: string, onFilter: (filter: string, stage:
     };
 
     const handleSearchValueChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        localStorage.setItem("selectable_filter_search", event.target.value);
         setSearchValue(event.target.value)
     }
 
